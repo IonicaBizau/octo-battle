@@ -1,24 +1,41 @@
 {
-  "name": "octo-army",
+  "name": "octo-battle",
   "version": "1.0.0",
   "description": "A battle game with octocats.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/octo-game.git"
+    "url": "git@github.com:IonicaBizau/octo-battle.git"
   },
   "keywords": [
     "game",
     "battle",
     "octocat"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/octo-game/issues"
+    "url": "https://github.com/IonicaBizau/octo-battle/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/octo-game"
+  "homepage": "https://github.com/IonicaBizau/octo-battle",
+  "blah": {
+    "description": [
+      {
+        "h2": "How to play"
+      },
+      {
+        "p": [
+          "There are two armies: red and blue. Each army has the following units (10 of each type): *murakami*, *miner* and *mega*.",
+          "There is no much to do in this game. Just keep pressing <kbd>Enter</kbd> to continue the battle. Everything is pretty random.",
+          "**Why**: I developed this small game when I was in college to demonstrate how *classes* work in JavaScript."
+        ]
+      }
+    ],
+    "thanks": "The unit images are taken from [Octodex](https://octodex.github.com/).",
+    "ex_img": "http://i.imgur.com/PtRsozu.png",
+    "ex_url": "https://ionicabizau.github.io/octo-battle"
+  }
 }
