@@ -1,6 +1,6 @@
 {
   "name": "octo-battle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A battle game with octocats.",
   "main": "lib/index.js",
   "scripts": {
@@ -37,5 +37,16 @@
     "thanks": "The unit images are taken from [Octodex](https://octodex.github.com/).",
     "ex_img": "http://i.imgur.com/PtRsozu.png",
     "ex_url": "https://ionicabizau.github.io/octo-battle"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
