@@ -1,6 +1,6 @@
 {
   "name": "octo-battle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A battle game with octocats.",
   "main": "lib/index.js",
   "scripts": {
@@ -42,6 +42,7 @@
     "bin/",
     "app/",
     "lib/",
+    "build/",
     "dist/",
     "src/",
     "resources/",
