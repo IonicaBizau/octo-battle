@@ -39,12 +39,12 @@
 ## How to play
 
 
-There are two armies: red and blue. Each army has the following units (10 of each type): *murakami*, *miner* and *mega*.
+There are two armies: red army and blue army. Each army has the following units (10 of each type): *murakami*, *miner* and *mega*.
 
 There is no much to do in this game. Just keep pressing <kbd>Enter</kbd> to continue the battle. Everything is pretty random.
 
 **Why**: I developed this small game when I was in college to demonstrate how *classes* work in JavaScript. :dizzy:
-
+Enjoy this game well.
 
 
 
