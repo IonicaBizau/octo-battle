@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var TYPES = ["murakami", "miner", "mega"]
+    const TYPES = ["murakami", "miner", "mega"]
       , KILL_DISTANCE = 5
       ;
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
     };
 
     Unit.prototype.next = function () {
-        var x = this.x
+        let x = this.x
           , y = this.y
           ;
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
     };
 
     Army.prototype.kill = function (unit) {
-        var index = this.units.indexOf(unit);
+        const index = this.units.indexOf(unit);
         if (index === -1) {
             return console.error("Cannot find unit.");
         }
@@ -66,7 +66,7 @@ $(document).ready(function () {
     };
 
     Army.prototype.cleanUp = function () {
-        var self = this;
+        const self = this;
         this.units.forEach(function (c) {
             if (c.died) {
                 self.kill(c);
@@ -76,7 +76,7 @@ $(document).ready(function () {
     };
 
     Army.prototype.generate = function (count, type) {
-        for (var i = 0; i < 10; ++i) {
+        for (let i = 0; i < 10; ++i) {
             this.add(new Unit(
                 Math.random() * 10
               , Math.random() * 10
@@ -99,7 +99,7 @@ $(document).ready(function () {
             c.generate(10, TYPES[1]);
             c.generate(10, TYPES[2]);
             c.units.forEach(function (u) {
-                u.ui.addClass("army-" + i);
+                u.ui.addClass(`army-${i}`);
             });
         });
     };
@@ -112,7 +112,7 @@ $(document).ready(function () {
             return $("h1").text("Red won!");
         }
         if (KILL_DISTANCE > 800) {
-            $("h1").text((this.armies[0].units.length > this.armies[1].units.length ? "Red" : "Blue") + " won!");
+            $("h1").text(`${this.armies[0].units.length > this.armies[1].units.length ? "Red" : "Blue"} won!`);
         }
     };
 
@@ -138,12 +138,12 @@ $(document).ready(function () {
     };
 
     Game.prototype.battle = function () {
-        var self = this;
+        const self = this;
         this.next();
         this.cleanUp();
 
 
-        var army1 = this.armies[0]
+        const army1 = this.armies[0]
           , army2 = this.armies[1]
           ;
 
@@ -156,7 +156,7 @@ $(document).ready(function () {
         });
     };
 
-    var g = new Game(".battle-place");
+    const g = new Game(".battle-place");
     window.game = g;
 
     $(".container").css("opacity", "0").animate({
